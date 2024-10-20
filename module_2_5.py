@@ -3,6 +3,8 @@ def get_matrix(n,m,value):
     for i in range(n):
         row = [value]*m
         matrix.append(row)
+        if value <= 0:
+            print([])
     return matrix
 result1 = get_matrix(2, 2, 10)
 result2 = get_matrix(3, 5, 42)
